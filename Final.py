@@ -12,12 +12,12 @@ i=0
 trainingsets = 10
 while i<trainingsets:
         x=np.linspace(1,10,samplesize)
-        y=x**2
-        #y=5+x*np.cos(x)
+        #y=x**2
+        y=5+x*np.cos(x)
         s=np.random.normal(y,1,samplesize)
         f.append(s)
         f.append(x)
-        #b = open('test1000final.csv', 'w')
+        b = open('test1000final.csv', 'w')
         a = csv.writer(b)
         #print f
         a.writerows(f)
